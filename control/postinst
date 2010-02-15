@@ -1,0 +1,21 @@
+#!/bin/sh                                                                                       
+
+PID="org.webosinternals.fishfillets"
+RCDIR="/media/internal/.fillets-ng"
+
+if [ -z "$IPKG_OFFLINE_ROOT" ]; then
+  IPKG_OFFLINE_ROOT=/media/cryptofs/apps
+fi
+
+# Install the upstart script
+rm -f /etc/event.d/${PID}
+cp $IPKG_OFFLINE_ROOT/usr/palm/applications/${PID}/upstart/${PID} /etc/event.d/${PID}
+
+# create fishfillets dirs (fishfillets doesn't)
+mkdir -p $RCDIR
+
+# install the default config
+cp $IPKG_OFFLINE_ROOT/usr/palm/applications/${PID}/etc/* $RCDIR/
+
+exit 0
+
