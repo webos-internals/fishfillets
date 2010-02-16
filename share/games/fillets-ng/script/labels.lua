@@ -299,6 +299,29 @@ label_text("menu_back", "eo", "Reĵeti");
 label_text("help", "en",
 [[
                 HELP
+u - Undo
+r - Redo
+h - Help
+c - Save game
+p - Load game
+t - Toggle subtitles
+o - Options
+v - Fullscreen
+q - Quit/Escape
+
+            SMALL FISH
+i - left
+m - right
+l - up
+k - down
+
+            BIG FISH
+e - left
+x - right
+f - up
+d - down
+
+                HELP
 Restart level - Backspace
 Undo - -/+
 Help - F1
@@ -341,16 +364,27 @@ accélérer le jeu - Shift
 label_text("help", "de",
 [[
                 HILFE
-Ebene neustarten - Backspace
-Rückgängig - -/+
-Hilfe - F1
-Spiel speichern - F2
-Spiel laden - F3
-Bewegungszähler zeigen/verstecken - F5
-Untertitel zeigen/verstecken - F6
-Spielmenü - F10
-Vollbild - F11
-Spiel beschleunigen - Shift
+u - Rueckgaengig
+r - Wiederholen
+h - Hilfe
+c - Spiel Speichern
+p - Spiel Laden
+t - Untertitel
+o - Optionen
+v - Vollbild
+q - Beenden/Escape
+
+            KLEINER FISCH
+i - links
+m - rechts
+l - hoch
+k - runter
+
+            GROSSER FISCH
+e - links
+x - rechts
+f - hoch
+d - runter
 ]])
 label_text("help", "it",
 [[
